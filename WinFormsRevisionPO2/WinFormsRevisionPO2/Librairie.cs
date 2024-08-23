@@ -40,16 +40,16 @@ namespace WinFormsRevisionPO2
             }
             else 
             { 
-            errorProviderAjoutDeLivre.SetError(ActiveControl,textBoxAuteur.Text + textBoxTitre.Text + textBoxPrix.Text + textBoxQuantiteInventaire );
+         
             }
             
         }
-        private void AfficherLivres()
-        {
-            foreach (Livre livre in inventaire.livres)
+            private void AfficherLivres()
             {
-                listBoxInventaire.Items.Add(livre);
+                foreach (Livre livre in inventaire.livres)
+                {
+                    listBoxInventaire.Items.Add(livre);
+                }
             }
-        }
     }
 }
