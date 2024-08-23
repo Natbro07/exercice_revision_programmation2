@@ -8,10 +8,10 @@ namespace WinFormsRevisionPO2
 {
     internal class Livre
     {
-        private string titre;
-        private string auteur;
-        private int quantiteInventaire;
-        private int prix;
+        public string Titre { get;  }
+        public string Auteur { get ;  }
+        public int QuantiteInventaire { get; }
+        public int Prix { get;  }
 
         public Livre(string titre, string auteur, int quantiteInventaire, int prix)
         {
@@ -21,10 +21,7 @@ namespace WinFormsRevisionPO2
             Prix = prix;
         }
 
-        public string Titre { get => titre; set => titre = value; }
-        public string Auteur { get => auteur; set => auteur = value; }
-        public int QuantiteInventaire { get => quantiteInventaire; set => quantiteInventaire = value; }
-        public int Prix { get => prix; set => prix = value; }
+       
 
         public override string? ToString()
         {
